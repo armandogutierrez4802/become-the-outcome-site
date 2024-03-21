@@ -35,16 +35,16 @@ export default function BookYourCall() {
     return (
         <>
             <div className="bg-white h-full relative">
-                <div className="px-6 py-8 sm:px-6 lg:px-8">
+                {/* <div className="px-6 py-8 sm:px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Book Your Call
                         </h2>
                     </div>
-                </div>
+                </div> */}
                 {/* {loading ? spinner : <Calendly url="https://calendly.com/becometheoutcome/30min" />} */}
                 {spinner}
-                <Calendly url="https://calendly.com/becometheoutcome/30min" />
+                <Calendly url="https://calendly.com/becometheoutcome/free-call" />
 
             </div>
         </>
