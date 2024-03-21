@@ -18,7 +18,7 @@ const manifestations = [
 
 export default function Home() {
   return (
-    <div className="h-full border-12 border-black m-0 p-0">
+    <div className="bg-white h-full border-12 border-black m-0 p-0">
       {/* <div className="bg-white mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> */}
 
       <div className="px-6 py-12 sm:px-6 sm:py-24 lg:px-8">
@@ -88,7 +88,7 @@ export default function Home() {
               >
                 {manifestations.map((manifestation) => (
                   <li key={manifestation} className="flex gap-x-3 text-gray-900">
-                    ✅<span className="">{manifestation}</span>
+                    ✅ {manifestation}
                   </li>
                 ))}
               </ul>
