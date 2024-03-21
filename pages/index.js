@@ -85,7 +85,7 @@ export default function Home() {
                   className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 text-gray-900"
                 >
                   {manifestations.map((manifestation) => (
-                    <li key={manifestation} className="flex gap-x-3">
+                    <li key={manifestation} className="flex gap-x-3 text-gray-900">
                       <span className="">{manifestation}</span>
                     </li>
                   ))}
