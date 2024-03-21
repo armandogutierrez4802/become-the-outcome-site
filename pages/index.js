@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 // import { Inter } from "next/font/google";
@@ -18,7 +18,7 @@ const manifestations = [
 
 export default function Home() {
   return (
-    <div className="bg-white h-full">
+    <div className="h-full border-12 border-black m-0 p-0">
       {/* <div className="bg-white mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> */}
 
       <div className="px-6 py-12 sm:px-6 sm:py-24 lg:px-8">
@@ -58,53 +58,59 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <div className="relative isolate bg-white">
-          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            {/* <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20"> */}
-            <div className="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-8 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-12 xl:gap-x-20 xl:px-20">
-              {/* <img
+      {/* <div> */}
+      {/* <div className="relative isolate h-full"> */}
+      <div className="relative h-full">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          {/* <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20"> */}
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-8 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-12 xl:gap-x-20 xl:px-20">
+            {/* <img
                 className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
                 src="https://images.unsplash.com/photo-1613755469365-40b004dc3bb4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               /> */}
-              <img
-                className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-                src="./images/us.jpg"
-                alt=""
-              />
-              <div className="w-full flex-auto">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                  Why work with us?
-                </h2>
-                <p className="mt-6 text-lg leading-8 text-gray-900">
-                  Here are some of the things Kathlyn and I have manifested:
-                </p>
-                <ul
-                  role="list"
-                  className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 text-gray-900"
-                >
-                  {manifestations.map((manifestation) => (
-                    <li key={manifestation} className="flex gap-x-3 text-gray-900">
-                      <span className="">{manifestation}</span>
-                    </li>
-                  ))}
-                </ul>
+            <img
+              // className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
+              className="h-96 w-full flex-none rounded-2xl object-cover lg:aspect-square lg:h-auto lg:max-w-sm"
+              src="./images/us.jpg"
+              alt=""
+            />
+            <div className="w-full flex-auto">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Why work with us?
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-900">
+                Here are some of the things Kathlyn and I have manifested:
+              </p>
+              <ul
+                role="list"
+                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 text-gray-900"
+              >
+                {manifestations.map((manifestation) => (
+                  <li key={manifestation} className="flex gap-x-3 text-gray-900">
+                    ✅<span className="">{manifestation}</span>
+                  </li>
+                ))}
+              </ul>
 
-              </div>
             </div>
           </div>
-          <div className="mb-24 flex items-center justify-center">
-            <Link
-              href="/book-your-call"
-              className="flex items-center text-lg rounded-md bg-blue-600 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-            >
-              <span className="text-2xl pr-2">👉🏻</span>Click Here to Book a Call
-              <span className="text-2xl pl-2">👈🏻</span>
-            </Link>
-          </div>
+        </div>
+        <div className="mb-24 flex items-center justify-center">
+          <Link
+            href="/book-your-call"
+            className="flex items-center text-lg rounded-md bg-blue-600 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          >
+            <span className="text-2xl pr-2">👉🏻</span>Click Here to Book a Call
+            <span className="text-2xl pl-2">👈🏻</span>
+          </Link>
         </div>
       </div>
+
+
+
+
+      {/* </div> */}
     </div>
   );
 }
