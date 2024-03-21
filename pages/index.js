@@ -86,7 +86,7 @@ export default function Home() {
                 >
                   {manifestations.map((manifestation) => (
                     <li key={manifestation} className="flex gap-x-3">
-                      <span className="bg-red-900">{manifestation}</span>
+                      <span className="">{manifestation}</span>
                     </li>
                   ))}
                 </ul>
