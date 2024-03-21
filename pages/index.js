@@ -10,7 +10,7 @@ const manifestations = [
   'Dream Partner / SP',
   '$35/hr Job',
   'Dream Wedding',
-  'Healthy relationship / marriage',
+  'Healthy Relationship/Marriage',
   'Dream Apartment',
   'Coaching Business (in the works!)',
   'Tootsie Pop (lol)',
@@ -35,7 +35,7 @@ export default function Home() {
               Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
               anim id veniam aliqua proident excepteur commodo do ea.
             </p> */}
-          <h1 className="py-32 border-2">VIDEO HERE</h1>
+          <h1 className="py-32 border-2 text-gray-900">VIDEO HERE</h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-red-600">
             Please watch the video before booking a call
           </p>
@@ -82,11 +82,11 @@ export default function Home() {
                 </p>
                 <ul
                   role="list"
-                  className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2"
+                  className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 text-gray-900"
                 >
                   {manifestations.map((manifestation) => (
                     <li key={manifestation} className="flex gap-x-3">
-                      <span className="text-black">{manifestation}</span>
+                      <span className="">{manifestation}</span>
                     </li>
                   ))}
                 </ul>
